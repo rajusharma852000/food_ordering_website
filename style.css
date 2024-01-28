@@ -1,0 +1,237 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* targeting logo */
+#navbar{
+    display: flex;
+    /* width: 1900px; */
+    width: 100vw;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo1{
+    height: 70px;
+    margin: 4px 4px;
+    padding: 4px;
+}
+
+/* targeting list  */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 4px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 4px 13px;  /* extra */
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 527px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('images/bg1.jpg') no-repeat center center/cover;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.90;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem; 
+}
+#home .btn:hover{
+    font-size: 1.2rem;
+    background-color: orangered;
+    color: white;
+}
+
+/* Services section */
+.services{
+    display: flex;
+}
+.services .box{
+    border: solid black 2px;
+    padding: 15px;
+    margin: 10px 15px;
+    border-radius: 14px;;
+    background-color: rgba(238, 243, 243, 0.904);
+    margin-bottom: 20px;
+}
+.services .box img{
+    height: 92px;
+    display: block;
+    margin: auto;
+}
+.services .box p{
+    text-align: center;
+    padding: 12px;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-item{
+    padding: 15px;
+}
+#contact-section h1{
+    padding-top: 15px;  
+    margin-bottom: 25px; 
+}
+.client-item  img {
+    display: block;
+    margin: auto;
+}
+.client-item  img:hover{
+    background-color: black;
+    border: solid orange 3px;
+    border-radius: 8px;
+}
+#client-item1{
+    width: 210px;
+}
+#client-item2{
+    width: 100px;
+}
+#client-item3{
+    width: 143px;
+    padding-bottom:5px;
+}
+#client-item4{
+    padding-top: 15px;
+    width: 216px;
+}
+#client-item5{
+    width: 186px;
+}
+
+/* contact section */
+#contact-section{
+    position: relative;
+}
+#contact-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('images/cont1.jpg') no-repeat center center/cover;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.contact-box input{
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin: 3px;
+}
+.contact-box textarea{
+    width: 100%;
+    height: 80px;
+    padding: 3px;
+    display: flex;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    overflow-y:auto;
+    margin: 3px;
+    margin-bottom: 10px;
+}
+.contact-box form{
+    width: 40%;
+}
+/* footer  */
+footer{
+    background: black;
+    color: white;
+    padding: 5px 5px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+}
+.h-secondry{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 1px 0px;
+}
+.btn{
+    padding: 5px;
+    margin: 9px;
+    font-size: 1.1rem;
+    border: solid black 2px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
